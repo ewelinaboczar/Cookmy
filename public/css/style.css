@@ -1,0 +1,81 @@
+:root {
+    --nav-bg-color: #F5E3BC;
+    --log-reg-bg-color: #F5D297;
+    --buttons-main-color: #F59701;
+    --dark-orange-color: #F55001;
+    --input-main-color: #FFF7E5;
+    --input-font-color: #757575;
+    --green-dark-color: #8AA942;
+    --green-light-color: #E3F0C5;
+    --main-font: 'Nunito Sans', sans-serif;;
+    --main-font-color: #000000;
+}
+
+p {
+    margin: 0;
+}
+
+#root {
+    font-family: var(--main-font);
+    
+}
+
+body{
+    background-color: var(--log-reg-bg-color);
+    width: 360px;
+    height: 800px;
+    margin: 0;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    margin:0 2em;
+    padding-top: 2.5em;
+}
+
+.info-panel img {
+    width: 300px;
+    align-self: center;
+}
+
+.info-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    margin:2em 0 2em 0 ;
+}
+
+.upper > p {
+    font-size: 36px;
+    text-align: left;
+}
+
+.upper > #tittle {
+    font-weight: 700;
+    line-height: 49px;
+}
+
+.info-panel > p {
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    gap: 1em
+}
+
+#dot {
+    border-radius: 100%;
+    width: 17px;
+    height: 17px;
+    background-color: #FFFFFF;
+    border-style: none;
+}
+
