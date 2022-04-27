@@ -11,71 +11,100 @@
     --main-font-color: #000000;
 }
 
-p {
+* {
+    box-sizing: border-box;
     margin: 0;
-}
-
-#root {
+    padding: 0;
     font-family: var(--main-font);
-    
 }
 
 body{
+    background-color: white;
+}
+
+#wrapper {
+    max-width: 412px;
+    height: 100vh;
     background-color: var(--log-reg-bg-color);
-    width: 360px;
-    height: 800px;
-    margin: 0;
+    margin: 0 auto;
+    
+}
+.top {
+    padding: 0em 2em ;
+    height: 80vh;
 }
 
-.upper {
-    display: flex;
-    flex-direction: column;
-    margin:0 2em;
-    padding-top: 2.5em;
-}
-
-.info-panel img {
-    width: 300px;
-    align-self: center;
-}
-
-.info-panel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2em;
-    margin:2em 0 2em 0 ;
-}
-
-.upper > p {
+header {
+    display: block;
+    padding: 1.5em 0 1em;
     font-size: 36px;
-    text-align: left;
 }
 
-.upper > #tittle {
+header p {
     font-weight: 700;
-    line-height: 49px;
 }
 
-.info-panel > p {
-    width: 200px;
-    font-size: 16px;
-    text-align: center;
-    align-self: center;
+.sheet img {
+    max-width: 90%;
 }
 
-.dots{
+.sheet {
     display: flex;
-    justify-content: center;
-    gap: 1em
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
 }
 
-#dot {
-    border-radius: 100%;
+.sheet p {
+    max-width: 70%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#dots {
+    height: 10vh;
+    display: flex;
+    gap: 1em;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+#dots > .dot {
+    background-color: #F5E3BC;
     width: 17px;
     height: 17px;
-    background-color: #FFFFFF;
-    border-style: none;
+    border-radius: 100%;
 }
 
+.bottom {
+    height: 20vh;
+    background-color: var(--log-reg-bg-color);
+}
+
+.bottom div {
+    background-color: white;
+    height: 100%;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom a {
+    text-align: center;
+    
+    background-color: #F59701;
+    padding: 1em 3em;
+    color: white;
+    font-size: 20px;
+    border-radius: 60px;
+}
+
+#dots > .dot.active, #dots > .dot:hover{
+    background-color: white;
+}
+
+ 

@@ -13,15 +13,25 @@
 </head>
 
 <body>
-	<!-- Element HTML pełniący rolę kontenera dla aplikacji React -->
-	<div id="root"></div>
-	<!-- Biblioteka React -->
-	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-	<!-- Biblioteka React DOM -->
-	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-	<!-- Babel - kompilowanie JSX i ES6 do ES5 -->
-	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-	<script type="text/babel" src="../js/app.js"></script>
+	<div id="wrapper">
+		<div class="top">
+			<header>Welcome to <p>Cookmy.</p></header>
+			<div class="sheet" id="sheet_1">
+				<img src="../img/deska.png" alt="image-1"/>
+				<p>Start collecting new recipes in one place.</p>
+			</div>
+			<nav id="dots">
+				<a class="dot active" id="dot_1"></a>
+				<a class="dot" id="dot_2"></a>
+				<a class="dot" id="dot_3"></a>
+				<a class="dot" id="dot_4"></a>
+			</nav>
+		</div>
+		<div class="bottom">
+			<div>
+				<a class="btn-get_started">Get Started</a>
+			</div>
+		</div>
+	</div>
 </body>
-
 </html>
