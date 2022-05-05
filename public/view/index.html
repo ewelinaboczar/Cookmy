@@ -10,21 +10,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../js/script.js" defer></script>
 </head>
 
 <body>
 	<div id="wrapper">
 		<div class="top">
 			<header>Welcome to <p>Cookmy.</p></header>
-			<div class="sheet" id="sheet_1">
-				<img src="../img/deska.png" alt="image-1"/>
-				<p>Start collecting new recipes in one place.</p>
+			<div class="sheets">
+				<div class="sheet active" id="sheet_0">
+					<img src="../img/deska.png" alt="image-1"/>
+					<p>Start collecting new recipes in one place.</p>
+				</div>
+				<div class="sheet" id="sheet_1">
+					<img src="../img/deska.png" alt="image-2"/>
+					<p>Find new ones and share with your friends.</p>
+				</div>
+				<div class="sheet" id="sheet_2">
+					<img src="../img/deska.png" alt="image-3"/>
+					<p>All recipes always with you, in your hand.</p>
+				</div>
+				<div class="sheet" id="sheet_3">
+					<img src="../img/deska.png" alt="image-4"/>
+					<p>Discover the cuisines of the world.</p>
+				</div>
 			</div>
+			
 			<nav id="dots">
-				<a class="dot active" id="dot_1"></a>
+				<a class="dot active" id="dot_0"></a>
+				<a class="dot" id="dot_1"></a>
 				<a class="dot" id="dot_2"></a>
 				<a class="dot" id="dot_3"></a>
-				<a class="dot" id="dot_4"></a>
 			</nav>
 		</div>
 		<div class="bottom">
