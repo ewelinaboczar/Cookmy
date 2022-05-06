@@ -17,16 +17,21 @@ function markValidation(element, condition){
 }
 
 function validatePassword() {
-    setTimeout(function (){
-        const condition = arePasswordSame(
-            passwordInput.value,
-            confirmedPasswordInput.value
-            
-        );
-        markValidation(confirmedPasswordInput,condition);
-    },
-    1000
-    )
+    if(passwordInput.value != ''){
+        setTimeout(function (){
+            const condition = arePasswordSame(
+                passwordInput.value,
+                confirmedPasswordInput.value
+                
+            );
+            markValidation(confirmedPasswordInput,condition);
+        },
+        1000
+        )    
+    }else{
+        confirmedPasswordInput.classList.remove('no-valid');
+    }
+    
 }
 
 function isEmail(email) {
@@ -34,11 +39,16 @@ function isEmail(email) {
 }
 
 function emailValidation() {
-    setTimeout(function () {
+    if(emailInput.value != ''){
+       setTimeout(function () {
             markValidation(emailInput, isEmail(emailInput.value));
-        },
-        1000
-    );
+            },
+            1000
+        ); 
+    }else{
+        emailInput.classList.remove('no-valid');
+    }
+    
 }
 
 function isStrengthEnough(pass) {
