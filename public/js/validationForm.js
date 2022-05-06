@@ -7,6 +7,7 @@ const medium = document.querySelector(".medium");
 const strong = document.querySelector(".strong");
 const text = document.querySelector(".text");
 const showBtn = document.querySelector(".showBtn");
+const createAccountSpan = document.querySelector("#create-new-account")
 
 function arePasswordSame(password,confirmedPassword){
     return password === confirmedPassword;
