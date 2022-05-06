@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Register</title>
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../js/validationForm.js" defer></script>
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper form">
+		<div class="bottom form-bg">
+			<div>
+                <h1>Sign Up</h1>
+                <form id="submit" action="#" method="post">
+                    <div>
+                        <div>
+                            <p>Email</p>
+                            <input name="email" type="text">
+                        </div>
+                        <div>
+                            <p>Nickname</p>
+                            <input name="nick" type="text">
+                        </div>
+                        <div>
+                            <p>Password</p>
+                            <div class="field">
+                                <input name="password" type="password">
+                                <span class="showBtn"><img src="https://img.icons8.com/material-sharp/24/000000/visible.png"/></span>
+                            </div>
+                            
+                            <div class="div-pass-strength">
+                                <div id="pass-strength">
+                                    <span class="weak"></span>
+                                    <span class="medium"></span>
+                                    <span class="strong"></span>
+                                </div>
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Repeat password</p>
+                            <input name="confirm_password" type="password">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <a class="btn-create_account" href="#">Create account</a>
+                    </div>
+                </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

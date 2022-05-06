@@ -19,3 +19,4 @@ function changeView() {
 
 setInterval(changeView,time * 1000);
 
+

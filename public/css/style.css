@@ -91,7 +91,7 @@ header p {
     background-color: var(--log-reg-bg-color);
 }
 
-.bottom div {
+.bottom > div {
     background-color: white;
     height: 100%;
     border-radius: 60px 60px 0 0;
@@ -103,7 +103,7 @@ header p {
 
 .bottom a {
     text-align: center;
-    
+    text-decoration: none;
     background-color: #F59701;
     padding: 1em 3em;
     color: white;
@@ -113,6 +113,158 @@ header p {
 
 #dots > .dot.active, #dots > .dot:hover{
     background-color: white;
+}
+
+.wrapper.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bottom.form-bg {
+    height: 80vh;
+}
+
+.bottom.form-bg > div {
+    padding: 3em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em
+}
+
+.bottom.form-bg h1 {
+    height: 10vh;
+    align-self: flex-start;
+}
+
+
+
+.bottom.form-bg form {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form .div-pass-strength {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+form > div:first-child > div , form > div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0.5em;
+}
+
+form > div:first-child {
+    height: 80%;
+    gap:1em;
+}
+
+form > div:last-child {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div div p {
+    font-size: 14px;
+    color: var(--input-font-color);
+}
+
+form > div input{
+    width: 100%;
+    background-color: var(--input-main-color);
+    border: none;
+    padding: 1em;
+    border-radius: 60px;
+    transition: all 0.3s;
+}
+
+form > div input:focus{
+    box-shadow: inset 0 0 3px var(--nav-bg-color);
+}
+
+.no-valid {
+    border: #E53A3A solid 1px;
+    background-color: #E59E88;
+    outline: none;
+}
+
+#pass-strength {
+    height: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+#pass-strength span {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    border-radius: 60px;
+    position: relative;
+}
+
+#pass-strength span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+}
+
+#pass-strength span.active.weak:before{
+    background-color: #cc2f2f;
+}
+
+#pass-strength span.active.medium:before{
+    background-color: #fcb947;
+}
+#pass-strength span.active.strong:before{
+    background-color: #63b011;
+}
+
+form .text {
+    font-size: 10px;
+    text-align: center;
+}
+
+form .text.weak{
+    color: #cc2f2f;
+}
+
+form .text.medium{
+    color: #fcb947;
+}
+
+form .text.strong{
+    color: #63b011;
+}
+
+form .showBtn {
+    position: absolute;
+    display: none;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+form .field{
+    position: relative;
 }
 
  
