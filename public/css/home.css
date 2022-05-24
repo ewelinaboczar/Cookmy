@@ -1,0 +1,70 @@
+:root {
+    --nav-bg-color: #F5E3BC;
+    --log-reg-bg-color: #F5D297;
+    --buttons-main-color: #F59701;
+    --dark-orange-color: #F55001;
+    --input-main-color: #FFF7E5;
+    --input-font-color: #757575;
+    --green-dark-color: #8AA942;
+    --green-light-color: #E3F0C5;
+    --main-font: 'Nunito Sans', sans-serif;;
+    --main-font-color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+
+body{
+    background-color: white;
+}
+
+#wrapper {
+    max-width: 412px;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: inherit;
+    height: 20%;
+    background-color: var(--nav-bg-color);
+    border-radius: 60px 60px 0 0;
+}
+
+#main-container {
+    overflow: scroll;
+    height: 100%;
+    padding-bottom: 180px;
+}
+
+#personal-info {
+    height: 10%;
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#personal-info p {
+    width: 70%;
+    text-align: left;
+    align-self: center;
+}
+
+#personal-info a {
+    width: 30%;
+    align-self: center;
+    display: flex;
+    justify-content: right;
+}
