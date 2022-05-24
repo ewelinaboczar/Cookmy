@@ -8,6 +8,7 @@ const strong = document.querySelector(".strong");
 const text = document.querySelector(".text");
 const showBtn = document.querySelector(".showBtn");
 const createAccountSpan = document.querySelector("#create-new-account")
+const emailInfo = document.querySelector(".div-email-info")
 
 function arePasswordSame(password,confirmedPassword){
     return password === confirmedPassword;
@@ -41,13 +42,15 @@ function isEmail(email) {
 
 function emailValidation() {
     if(emailInput.value != ''){
-       setTimeout(function () {
+        setTimeout(function () {
             markValidation(emailInput, isEmail(emailInput.value));
+            !isEmail(emailInput.value) ? emailInfo.classList.add('active') : emailInfo.classList.remove('active');
             },
             1000
-        ); 
+        );
     }else{
         emailInput.classList.remove('no-valid');
+        emailInfo.classList.remove('active');
     }
     
 }
